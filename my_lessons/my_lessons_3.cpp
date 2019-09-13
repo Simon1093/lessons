@@ -35,7 +35,7 @@ int main() {
 	char b[5] = "456";
 	char c[10];
 
-	cout << "Pease enter: " + myFunctionA(a, b);
+	cout << "Pease enter: 123456 \n";
 	cin >> c;
 
 	cout << myThirdFunction(c, myFunctionA(a, b));
