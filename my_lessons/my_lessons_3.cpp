@@ -6,7 +6,6 @@
 
 using namespace std;
 
-/*
 int main() {
 
 	const int arrayLength = 20;
@@ -27,6 +26,17 @@ int main() {
 	printf_s("%s", words);
 
 	return 0;
+}
+
+/*
+int main() {
+	char text[50];
+
+	cin.get(text, 50);
+
+	cout << text;
+
+	system("pause");
 }
 */
 
