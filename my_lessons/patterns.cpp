@@ -28,7 +28,8 @@ int main_1() {
 		if (phrase[i] != ' ') {
 			words[n][k] = phrase[i];
 			k++;
-		} else {
+		}
+		else {
 			n++;
 			k = 0;
 		}
@@ -47,16 +48,94 @@ int main_1() {
 char* sayHello() {
 
 	char *arr = new char[7];
-	strcpy_s(arr, 7,  "Hello!");
+	strcpy_s(arr, 7, "Hello!");
 
 	return arr;
 }
 
-int main() {
+int main_2() {
 
 	char *array = sayHello();
 	cout << array;
 	delete[] array;
 
 	system("pause");
+
+	return 0;
+}
+
+// Dynamic array with perfect size//
+char * getPerfectSizeCharArray(char *arr) {
+
+	int size = strlen(arr);
+
+	char *tempArr = new char[size + 1];
+
+	/* source for strncpy_s: http://cppstudio.com/post/690/ */
+	strncpy_s(tempArr, size + 1, arr, size);
+
+	tempArr[size] = '\0';
+
+	delete[] arr;
+	arr = tempArr; // We rewrite array into "arr" pointer adress
+
+	return arr;
+}
+
+int main_3() {
+
+	char *arr = new char[1000];
+	cin.get(arr, 1000);
+
+	arr = getPerfectSizeCharArray(arr);
+
+	cout << arr << '\n';
+	delete[] arr;
+
+	system("pause");
+
+	return 0;
+}
+
+// Dynamic Structs //
+struct User
+{
+	char *name;
+};
+
+int main() {
+
+	int usersAmount;
+
+	cout << "Enter amount of users: \n";
+	cin >> usersAmount;
+
+	User *users = new User[usersAmount];
+
+	for (int i = 0; i < usersAmount; i++) {
+
+		cin.ignore();
+		char *name = new char[1000];
+		cin.get(name, 1000);
+
+		name = getPerfectSizeCharArray(name);
+
+		User john = {
+			name
+		};
+
+		users[i] = john;
+	}
+
+	for (int i = 0; i < usersAmount; i++) {
+		cout << users[i].name << '\n';
+
+		delete[] users[i].name;
+	}
+
+	delete[] users;
+
+	system("pause");
+
+	return 0;
 }
