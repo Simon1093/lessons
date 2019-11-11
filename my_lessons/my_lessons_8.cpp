@@ -1,4 +1,4 @@
-#include "pch.h"
+﻿#include "pch.h"
 #include <stdio.h>
 #include <Windows.h>
 #include <iostream>
@@ -38,12 +38,22 @@ int main() {
 	int e = ~a; // NOT
 	/*
 	 ~a:
-	 0 0 1 1
+	 00000000000000000000000000000011
 	 -------
-	 1 1 0 0 -> 12
+	 11111111111111111111111111111100 -> ‭4 294 967 292‬ for "unsigned int"
+	 11111111111111111111111111111100 -> -4 for "int"
 	*/
 
-	cout << e << '\n';
+	/*
+	Why -3 is 11111111 11111101? That's why:
+	 3  00000000 00000011
+	-3  11111111 11111101
+	----------------------
+	 0  00000000 00000000
+	*/
+
+	cout << e << '\n'; // shows int
+	printf("%u\n", e); // shows unsigned int
 
 	int f = a ^ b; // XOR
 	/*
@@ -78,10 +88,12 @@ int main() {
 
 	/* Change 2nd bit to 1 and 1st bit to 0 for "number" variable */
 	int number = 3; // 0 0 1 1
-	int result;
-	result = (number | (1 << 2)); // 0 1 1 1 = > 7
-
+	int result, result1;
+	result = (number | (1 << 2)); //  0 0 1 1 -> 0 1 1 1 = > 7 (Change 2nd bit to 1)
 	cout << result << '\n';
+
+	result1 = (result & ~(1 << 1)); // 0 1 1 1 -> 0 1 0 1 = > 5 (Change 1st bit to 0)
+	cout << result1 << '\n';
 
 	system("pause");
 
