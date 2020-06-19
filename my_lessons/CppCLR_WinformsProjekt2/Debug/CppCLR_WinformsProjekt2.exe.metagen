@@ -1,0 +1,51 @@
+  CppCLR_WinformsProjekt2.Form1.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly CppCLR_WinformsProjekt2, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class data.Destination: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    setID(Int32): PrivateScope, Public, HideBySig
+    setStreetName(String): PrivateScope, Public, HideBySig
+    setHouseNumber(String): PrivateScope, Public, HideBySig
+    getID(): PrivateScope, Public, HideBySig
+    getStreetName(): PrivateScope, Public, HideBySig
+    getHouseNumber(): PrivateScope, Public, HideBySig
+Class Discount: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    setID(Int32): PrivateScope, Public, HideBySig
+    setPercent(String): PrivateScope, Public, HideBySig
+    setOrderID(String): PrivateScope, Public, HideBySig
+    getID(): PrivateScope, Public, HideBySig
+    getPercent(): PrivateScope, Public, HideBySig
+    getOrderID(): PrivateScope, Public, HideBySig
+Class Order: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    setID(Int32): PrivateScope, Public, HideBySig
+    setCustomerName(String): PrivateScope, Public, HideBySig
+    setCar(String): PrivateScope, Public, HideBySig
+    setAddress(): PrivateScope, Public, HideBySig
+    setAddress(String): PrivateScope, Public, HideBySig
+    setDestinationID(Int32): PrivateScope, Public, HideBySig
+    setDestination(Destination): PrivateScope, Public, HideBySig
+    getID(): PrivateScope, Public, HideBySig
+    getCustomerName(): PrivateScope, Public, HideBySig
+    getCar(): PrivateScope, Public, HideBySig
+    getDestinationID(): PrivateScope, Public, HideBySig
+Class CppCLR_WinformsProjekt.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

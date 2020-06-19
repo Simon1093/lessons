@@ -1,0 +1,8 @@
+﻿  CppCLR_WinformsProjekt.cpp
+c:\users\simon\documents\visual studio 2017\projects\cppclr_winformsprojekt2\cppclr_winformsprojekt2\form1.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\simon\documents\visual studio 2017\projects\cppclr_winformsprojekt2\cppclr_winformsprojekt2\form1.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\simon\documents\visual studio 2017\projects\cppclr_winformsprojekt2\cppclr_winformsprojekt2\form1.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\simon\documents\visual studio 2017\projects\cppclr_winformsprojekt2\cppclr_winformsprojekt2\form1.h(299): warning C4129: 'd': unrecognized character escape sequence
+c:\users\simon\documents\visual studio 2017\projects\cppclr_winformsprojekt2\cppclr_winformsprojekt2\form1.h(311): warning C4715: 'CppCLR_WinformsProjekt::Form1::makeReadQuery': not all control paths return a value
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  CppCLR_WinformsProjekt2.vcxproj -> C:\Users\Simon\Documents\Visual Studio 2017\Projects\CppCLR_WinformsProjekt2\Debug\CppCLR_WinformsProjekt2.exe
