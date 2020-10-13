@@ -28,7 +28,7 @@ int main() {
 	}
 
 	for (int i = 0; i < size; i++) {
-		cout << &numbers[i] << numbers[i] << "\n";
+		cout << &numbers[i] << " " << numbers[i] << "\n";
 	}
 
 	delete[] numbers;
